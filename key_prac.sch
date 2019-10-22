@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:key_prac-cache
 EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
@@ -42,7 +41,7 @@ Wire Wire Line
 	1450 1800 1450 1900
 Connection ~ 1450 1900
 $Comp
-L key_prac-rescue:analog_pad-analog U2
+L analog:analog_pad U2
 U 1 1 5DAE62FA
 P 3150 2050
 F 0 "U2" H 3150 1777 50  0000 C CNN
