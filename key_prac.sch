@@ -1,0 +1,112 @@
+EESchema Schematic File Version 4
+LIBS:key_prac-cache
+EELAYER 30 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Module2:promicro U1
+U 1 1 5DAE084D
+P 1850 1750
+F 0 "U1" H 1850 2165 50  0000 C CNN
+F 1 "promicro" H 1850 2074 50  0000 C CNN
+F 2 "key_prac:promicro" H 1750 2050 50  0001 C CNN
+F 3 "" H 1750 2050 50  0001 C CNN
+	1    1850 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5DAE3224
+P 1050 1900
+F 0 "#PWR0101" H 1050 1650 50  0001 C CNN
+F 1 "GND" H 1055 1727 50  0000 C CNN
+F 2 "" H 1050 1900 50  0001 C CNN
+F 3 "" H 1050 1900 50  0001 C CNN
+	1    1050 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 1900 1450 1900
+Wire Wire Line
+	1450 1800 1450 1900
+Connection ~ 1450 1900
+$Comp
+L key_prac-rescue:analog_pad-analog U2
+U 1 1 5DAE62FA
+P 3150 2050
+F 0 "U2" H 3150 1777 50  0000 C CNN
+F 1 "analog_pad" H 3150 1686 50  0000 C CNN
+F 2 "RF_GPS:Sierra_XA11X0" H 3200 2050 50  0001 C CNN
+F 3 "" H 3200 2050 50  0001 C CNN
+	1    3150 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 2000 3450 1700
+Wire Wire Line
+	3450 1700 2450 1700
+Wire Wire Line
+	2450 1700 2450 2000
+Wire Wire Line
+	2450 2000 2250 2000
+Wire Wire Line
+	3450 2100 3550 2100
+Wire Wire Line
+	3550 2100 3550 1800
+Wire Wire Line
+	3550 1800 2550 1800
+Wire Wire Line
+	2550 1800 2550 2100
+Wire Wire Line
+	2550 2100 2250 2100
+$Comp
+L power:GND #PWR0102
+U 1 1 5DAE9F5C
+P 2850 2350
+F 0 "#PWR0102" H 2850 2100 50  0001 C CNN
+F 1 "GND" H 2855 2177 50  0000 C CNN
+F 2 "" H 2850 2350 50  0001 C CNN
+F 3 "" H 2850 2350 50  0001 C CNN
+	1    2850 2350
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1450 1600
+NoConn ~ 1450 1700
+NoConn ~ 1450 2000
+NoConn ~ 1450 2100
+NoConn ~ 1450 2200
+NoConn ~ 1450 2300
+NoConn ~ 1450 2400
+NoConn ~ 1450 2500
+NoConn ~ 1450 2600
+NoConn ~ 1450 2700
+NoConn ~ 2250 2700
+NoConn ~ 2250 2600
+NoConn ~ 2250 2500
+NoConn ~ 2250 2400
+NoConn ~ 2250 2300
+NoConn ~ 2250 2200
+NoConn ~ 2250 1800
+NoConn ~ 2250 1700
+NoConn ~ 2250 1600
+Wire Wire Line
+	2850 2200 2850 2350
+NoConn ~ 2850 2000
+Wire Wire Line
+	2250 1900 2750 1900
+Wire Wire Line
+	2750 1900 2750 2100
+Wire Wire Line
+	2750 2100 2850 2100
+$EndSCHEMATC
